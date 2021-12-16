@@ -1,3 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XjeraLabs | Pricing</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* pricing intro---------- */
+        .pricingIntro {
+            width: 100%;
+            height: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background: url(./Images/Picture1.2.jpg); */
+            background: rgba(0, 0, 0, 0.5) url(./Images/Picture1.2.jpg);
+            background-blend-mode: darken;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .pricingIntroBox {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            /* flex-wrap: wrap; */
+            width: 90%;
+            height: cover;
+            padding: 3rem;
+            margin-top: 10rem;
+            margin-bottom: 5rem;
+            /* padding: 5rem; */
+            /* background: rgba(255, 255, 255, 0.7); */
+            background-image: linear-gradient(to bottom right,
+                    rgb(255, 255, 255),
+                    rgba(255, 255, 255));
+            backdrop-filter: blur(5px);
+            border-bottom: 2px solid rgba(0, 0, 0, 0.274);
+            border-right: 2px solid rgba(0, 0, 0, 0.274);
+            border-top: 2px solid rgba(255, 255, 255, 0.5);
+            border-left: 2px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .pricingIntroTxt {
+            font-family: 'poppins', sans-serif;
+            font-size: 1rem;
+        }
+
+        .pricingIntroIMG {
+            display: flex;
+            flex-direction: row;
+            padding: 1rem 0;
+            flex-wrap: wrap;
+            margin: auto;
+            width: 100%;
+        }
+
+        .pricingIntroIMG img {
+
+            width: 35vw;
+            height: 30vh;
+            min-width: 30vw;
+            min-width: 20vh;
+            margin: auto;
+        }
+
+        .startBtn {
+            background: rgb(0, 23, 90);
+            display: inline-block;
+            border: none;
+            color: #cfab33;
+            padding: .5rem 1rem;
+            margin: 1rem 0;
+            font-size: 1rem;
+            border-radius: 10px;
+            border: solid 2px #cfab33;
+            font-family: 'poppins', sans-serif;
+            text-decoration: none;
+            transition: .3s;
+        }
+
+        .startBtn:hover {
+            color: #cfab33;
+            background: transparent;
+            border: 2px solid #cfab33;
+        }
+
+        /* ------------------pricingIntro */
+        /* sub plans-------------- */
+        .subPlans {
+            width: 100%;
+            height: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background: url(./Images/Picture1.2.jpg); */
+            background: rgba(0, 0, 0, 0.5) url(./Images/Picture1.2.jpg);
+            background-blend-mode: darken;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .subPlansBox {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            /* flex-wrap: wrap; */
+            width: 90%;
+            height: cover;
+            padding: 3rem;
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+            /* padding: 5rem; */
+            /* background: rgba(255, 255, 255, 0.7); */
+            background-image: linear-gradient(to bottom right,
+                    rgb(255, 255, 255),
+                    rgba(255, 255, 255));
+            backdrop-filter: blur(5px);
+            border-bottom: 2px solid rgba(0, 0, 0, 0.274);
+            border-right: 2px solid rgba(0, 0, 0, 0.274);
+            border-top: 2px solid rgba(255, 255, 255, 0.5);
+            border-left: 2px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .subPlansTxt {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem 0;
+        }
+
+        .subPlansTxt h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            color: #242c6c;
+        }
+
+        .subPlansTxt p {
+            font-family: 'poppins', sans-serif;
+            font-size: 1rem;
+            padding: .5rem 0;
+            color: #000000;
+        }
+
+        .subPlansImgDesc {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .subPlanscombo {
+            padding: 0.5rem;
+            padding-top: 3rem;
+            margin: auto;
+            align-items: center;
+            text-align: center;
+        }
+
+        .subPlansIMG {
+            width: 8rem;
+            height: 7rem;
+            padding-bottom: 0.5rem;
+
+        }
+
+        .subPlansDesc {
+            font-family: 'poppins', sans-serif;
+            font-size: 1rem;
+            color: #cfab33;
+        }
+
+        /* ----------------sub plans */
+        /* mileageRewardScheme---------- */
+
+        .mileageRewardScheme {
+            width: 100%;
+            height: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background: url(./Images/Picture1.2.jpg); */
+            background: rgba(0, 0, 0, 0.5) url(./Images/Picture1.2.jpg);
+            background-blend-mode: darken;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .mileageRewardSchemeBox {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            /* flex-wrap: wrap; */
+            width: 90%;
+            height: cover;
+            padding: 3rem;
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+            /* padding: 5rem; */
+            /* background: rgba(255, 255, 255, 0.7); */
+            background-image: linear-gradient(to bottom right,
+                    rgb(255, 255, 255),
+                    rgba(255, 255, 255));
+            backdrop-filter: blur(5px);
+            border-bottom: 2px solid rgba(0, 0, 0, 0.274);
+            border-right: 2px solid rgba(0, 0, 0, 0.274);
+            border-top: 2px solid rgba(255, 255, 255, 0.5);
+            border-left: 2px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .mileageRewardSchemeTxt {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .mileageRewardSchemeContent h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            color: #242c6c;
+            padding: .5rem 0;
+
+        }
+
+        .mileageRewardSchemeContent p {
+            font-family: 'poppins', sans-serif;
+            font-size: 1rem;
+            padding: 1rem 0;
+            color: #000000;
+        }
+
+        .findMoreBtn {
+            font-family: 'poppins', sans-serif;
+            font-size: 1rem;
+            padding: .5rem 1rem;
+            background-color: transparent;
+            border: 2px solid #242c6c;
+            border-radius: 10px;
+            width: fit-content;
+            text-decoration: none;
+            color: #242c6c;
+            transition: .5s;
+        }
+
+        .findMoreBtn:hover {
+            color: #cfab33;
+            background: transparent;
+            border: 2px solid #cfab33;
+        }
+
+        .findMoreBtn2 {
+            font-family: 'poppins', sans-serif;
+            font-size: 1rem;
+            padding: .5rem 1rem;
+            background-color: transparent;
+            border: 2px solid #242c6c;
+            border-radius: 10px;
+            width: fit-content;
+            text-decoration: none;
+            color: #242c6c;
+            transition: .5s;
+            visibility: hidden;
+            /* display: none; */
+        }
+
+        .findMoreBtn2:hover {
+            color: #cfab33;
+            background: transparent;
+            border: 2px solid #cfab33;
+        }
+
+        .mileageRewardSchemeTableDesc {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 0 1rem;
+            height: 100% cover;
+        }
+
+        .mileageRewardSchemeTable {
+            height: 100%;
+            padding: 0;
+            margin: auto;
+            width: 100%;
+            align-items: left;
+            justify-content: left;
+            float: left;
+
+
+        }
+
+        .mileageRewardSchemeDesc {
+            font-family: 'poppins', sans-serif;
+            font-size: 0.7rem;
+            font-style: italic;
+        }
+
+        /* -------------------mileageRewardScheme */
+        /* pricingTable----------------------- */
+        .pricingTable {
+            width: 100%;
+            height: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background: url(./Images/Picture1.2.jpg); */
+            background: rgba(0, 0, 0, 0.5) url(./Images/Picture1.2.jpg);
+            background-blend-mode: darken;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .pricingTableBox {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            /* flex-wrap: wrap; */
+            width: 90%;
+            height: cover;
+            padding: 3rem;
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+            /* padding: 5rem; */
+            /* background: rgba(255, 255, 255, 0.7); */
+            background-image: linear-gradient(to bottom right,
+                    rgb(255, 255, 255),
+                    rgba(255, 255, 255));
+            backdrop-filter: blur(5px);
+            border-bottom: 2px solid rgba(0, 0, 0, 0.274);
+            border-right: 2px solid rgba(0, 0, 0, 0.274);
+            border-top: 2px solid rgba(255, 255, 255, 0.5);
+            border-left: 2px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .pricingTableTitle h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #242c6c;
+        }
+
+        .pricingTableContent {
+            padding: 3rem 0;
+            overflow-x: auto;
+            width: 100%;
+        }
+
+        .pricingTableContent table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .pricingTableContent td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            align-items: center;
+            font-family: 'poppins', sans-serif;
+            font-size: 1rem;
+            color: #000000;
+            text-align: center;
+
+        }
+
+        .pricingTableContent th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            align-items: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            color: #242c6c;
+            text-align: center;
+
+
+        }
+
+        .BasicTableHead span {
+            font-weight: lighter;
+            font-size: 1rem;
+            font-family: 'poppins', sans-serif;
+            padding: .3rem;
+            text-align: center;
+        }
+
+        /* ------------------pricingTable */
+
+        /* contact----------------------- */
+
+
+        /* -------media query-------------- */
+        @media screen and (max-width:900px) {
+            .mileageRewardSchemeBox {
+                flex-direction: column;
+                align-items: left;
+            }
+
+            .mileageRewardSchemeTableDesc {
+                padding: 0;
+            }
+
+            .findMoreBtn {
+                display: none;
+                visibility: hidden;
+                opacity: 0;
+            }
+
+            .findMoreBtn2 {
+                display: all;
+                visibility: visible;
+                margin: 1rem 0;
+            }
+
+            .pricingTableBox {
+                padding: 1rem;
+            }
+
+            .mileageRewardSchemeBox {
+                padding: 1rem;
+            }
+
+            .subPlansBox {
+                padding: 1rem;
+            }
+
+            .pricingIntroBox {
+                padding: 1rem;
+            }
+
+        }
+
         @media screen and (max-width:800px) {
             .pricingIntroIMG {
                 flex-direction: column;
@@ -5,8 +445,366 @@
             }
 
             .pricingIntroIMG img {
-                width: 70%;
+                width: 50%;
                 align-items: center;
             }
 
         }
+
+        @media screen and (max-width:500px) {
+            .pricingIntroIMG img {
+                width: 90%;
+                align-items: center;
+            }
+
+        }
+
+        /* -------media query-------------- */
+    </style>
+</head>
+
+
+<body>
+    <nav>
+        <div class="nav-center">
+            <!-- nav header -->
+            <div class="nav-header">
+                <a href="http://www.xjeralabs.com"><img src="./Images/XJ-Logo.PNG" class="logo" alt="logo" />
+                </a>
+                <button class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <!-- links -->
+            <ul class="links">
+                <li class="Ts_dropDown">
+                    <a href="#traffic-sight">TrafficSight™</a>
+                    <ul class="dropDown">
+                        <li><a href="../index.html#about">About</a></li>
+                        <li><a href="../index.html#services">Services</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./Articles/RecentArticles.html">Resources</a>
+                </li>
+                <li>
+                    <a href="Pricing.html">Pricing</a>
+                </li>
+                <li>
+                    <a href="https://my.xjeralabs.com/#/login">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="pricingIntro">
+        <div class="pricingIntroBox">
+            <div class="pricingIntroTxt">
+                <p>Xjera Labs believes that quality data are vital for producing quality results. As
+                    such, TrafficSightTM offers a tiered
+                    pricing plan that allow users to process multiple video footages from an individual junction to
+                    facilitate the
+                    collection of highly accurate traffic data. <br>
+                    This enables users to achieve competitive price rates where the average price per movement
+                    decreases as they process
+                    more movements at a single intersection.
+                </p>
+            </div>
+            <div class="pricingIntroIMG">
+                <img src="./Images/pricingIntroIMG 1.png" alt="Traffic Movements Tracking">
+                <img src="./Images/pricingIntroIMG 2.png" alt="Traffic Movements Tracking">
+            </div>
+            <div class="pricingIntroTxt">Find out about our pricing breakdown by creating an account with us.
+            </div>
+            <a href="#" class="startBtn">Start Here</a>
+
+        </div>
+    </div>
+    <div class="subPlans">
+        <div class="subPlansBox">
+            <div class="subPlansTxt">
+                <h2>TrafficSight™ Subscription Plans</h2>
+                <p>Join our subscription plan to get access to our award-winning video analytics solution, tiered
+                    pricing and rewards
+                    program.
+                </p>
+            </div>
+            <div class="subPlansImgDesc">
+                <div class="subPlanscombo">
+                    <img src="./Images/SubPlansIMG 1.png" alt="Accurate Traffic Data" class="subPlansIMG">
+                    <p class="subPlansDesc">Accurate Traffic Data
+                    </p>
+                </div>
+                <div class="subPlanscombo">
+                    <img src="./Images/SubPlansIMG 2.png" alt="Mileage Rewards Scheme" class="subPlansIMG">
+                    <p class="subPlansDesc">Mileage Rewards Scheme
+                    </p>
+                </div>
+                <div class="subPlanscombo">
+                    <img src="./Images/SubPlansIMG 3.png" alt="Personal Data Cloud" class="subPlansIMG">
+                    <p class="subPlansDesc">Personal Data Cloud
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mileageRewardScheme">
+        <div class="mileageRewardSchemeBox">
+            <div class="mileageRewardSchemeTxt">
+                <div class="mileageRewardSchemeContent">
+                    <h2>Mileage Rewards Scheme
+                    </h2>
+                    <p>We wish to reward our loyal customers with the most attractive rebates.
+
+                        By subscribing to TrafficSight™, you gain access to our mileage reward system where you can
+                        earn monthly rebate tokens
+                        from your uploads and processing orders.
+
+                        All new users start off at Rank E and move up the ranking as more videos are processed through
+                        TrafficSight™. Ranking
+                        are based on the total amount of footage processed within a 12months period and are updated
+                        monthly before the
+                        distribution of rebate tokens.
+                    </p>
+                </div>
+                <a href="#" class="findMoreBtn">Find Out More</a>
+            </div>
+            <div class="mileageRewardSchemeTableDesc">
+                <div class="mileageRewardSchemeTable">
+                    <table class="mileageRewardSchemeTable" style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <p
+                                        style="line-height:normal;margin-top:0pt;margin-bottom:0pt;margin-left:0in;margin-right:0in;text-indent:0in;text-align:center;vertical-align:bottom;">
+                                        <span
+                                            style='font-size:21px;font-family:"Montserrat";color: #242c6c;font-weight:bold;font-style:normal;vertical-align:baseline;'>Mileage
+                                            Reward Ranking</span>
+                                    </p><br>
+                                </th>
+                                <th>
+                                    <p id="isPasted"
+                                        style="line-height:normal;margin-top:0pt;margin-bottom:0pt;margin-left:0in;margin-right:0in;text-indent:0in;text-align:center;vertical-align:bottom;">
+                                        <span
+                                            style='font-size:21px;font-family:"Montserrat";color: #242c6c;font-weight:bold;font-style:normal;vertical-align:baseline;'>Hours
+                                            of <br>&nbsp;footage (Hours)*&nbsp;</span>
+                                    </p><br>
+                                </th>
+                                <th>
+                                    <p id="isPasted"
+                                        style="line-height:normal;margin-top:0pt;margin-bottom:0pt;margin-left:0in;margin-right:0in;text-indent:0in;text-align:center;vertical-align:bottom;">
+                                        <span
+                                            style='font-size:21px;font-family:"Montserrat";color: #242c6c;font-weight:bold;font-style:normal;vertical-align:baseline;'>Rebates
+                                            (%)**</span>
+                                    </p><br>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 33.3333%; background-color: rgb(204, 204, 204);">
+                                    <div style="text-align: center;font-family: 'poppins', sans-serif; color: #000000;">
+                                        E</div>
+                                </td>
+                                <td style="width: 33.3333%; background-color: rgb(204, 204, 204);">
+                                    <div style="text-align: center;font-family: 'poppins', sans-serif; color: #000000;">
+                                        100</div>
+                                </td>
+                                <td style="width: 33.2094%; background-color: rgb(204, 204, 204);">
+                                    <div style="text-align: center;font-family: 'poppins', sans-serif; color: #000000;">
+                                        2.5%</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 33.3333%; background-color: rgb(226, 80, 65);">
+                                    <div style="text-align: center;font-family: 'poppins', sans-serif; color: #000000;">
+                                        D</div>
+                                </td>
+                                <td style="width: 33.3333%; background-color: rgb(226, 80, 65);">
+                                    <div style="text-align: center;font-family: 'poppins', sans-serif; color: #000000;">
+                                        200</div>
+                                </td>
+                                <td style="width: 33.2094%; background-color: rgb(226, 80, 65);">
+                                    <div style="text-align: center;font-family: 'poppins', sans-serif; color: #000000;">
+                                        4.0%</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 33.3333%; background-color: rgb(251, 160, 38);">
+                                    <div style="text-align: center;font-family: 'poppins', sans-serif; color: #000000;">
+                                        C</div>
+                                </td>
+                                <td style="width: 33.3333%; background-color: rgb(251, 160, 38);">
+                                    <div style="text-align: center;font-family: 'poppins', sans-serif; color: #000000;">
+                                        500</div>
+                                </td>
+                                <td style="width: 33.2094%; background-color: rgb(251, 160, 38);">
+                                    <div style="text-align: center;font-family: 'poppins', sans-serif; color: #000000;">
+                                        5.0%</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 33.3333%; background-color: rgb(250, 197, 28);">
+                                    <div style="text-align: center;font-family: 'poppins', sans-serif; color: #000000;">
+                                        B</div>
+                                </td>
+                                <td style="width: 33.3333%; background-color: rgb(250, 197, 28);">
+                                    <div style="text-align: center;font-family: 'poppins', sans-serif; color: #000000;">
+                                        800</div>
+                                </td>
+                                <td style="width: 33.2094%; background-color: rgb(250, 197, 28);">
+                                    <div style="text-align: center;font-family: 'poppins', sans-serif; color: #000000;">
+                                        8.0%</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 33.3333%; background-color: rgb(97, 189, 109);">
+                                    <div style="text-align: center;font-family: 'poppins', sans-serif; color: #000000;">
+                                        A</div>
+                                </td>
+                                <td style="width: 33.3333%; background-color: rgb(97, 189, 109);">
+                                    <div style="text-align: center;font-family: 'poppins', sans-serif; color: #000000;">
+                                        2000</div>
+                                </td>
+                                <td style="width: 33.2094%; background-color: rgb(97, 189, 109);">
+                                    <div style="text-align: center;font-family: 'poppins', sans-serif; color: #000000;">
+                                        12.5%</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 33.3333%; background-color: rgb(84, 172, 210);">
+                                    <div style="text-align: center;font-family: 'poppins', sans-serif; color: #000000;">
+                                        S</div>
+                                </td>
+                                <td style="width: 33.3333%; background-color: rgb(84, 172, 210);">
+                                    <div style="text-align: center;font-family: 'poppins', sans-serif; color: #000000;">
+                                        10000</div>
+                                </td>
+                                <td style="width: 33.2094%; background-color: rgb(84, 172, 210);">
+                                    <div style="text-align: center;font-family: 'poppins', sans-serif; color: #000000;">
+                                        150.%</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mileageRewardSchemeDesc">*Hours are based on the total amount of footage over the last 12
+                    months from start of subscription
+                    ** Rewards are rebated as tokens of the stated value which can be use for the next upload and video
+                    processing
+                </div>
+                <a href="#" class="findMoreBtn2">Find Out More</a>
+            </div>
+        </div>
+    </div>
+    <div class="pricingTable">
+        <div class="pricingTableBox">
+            <div class="pricingTableTitle">
+                <h2>TrafficSight™ Subscription Plans</h2>
+            </div>
+            <div class="pricingTableContent" style="overflow-x: auto;">
+                <table>
+                    <tr>
+                        <th class="BasicTableHead" style="border: none;">Core Features of TrafficSight™
+                        </th>
+                        <th class="BasicTableHead">
+                            Basic <br><span>For anyone
+                                interested in traffic data collection
+                            </span> <br> <a href="#" class="startBtn">Start Here</a>
+                        </th>
+                        <th class="BasicTableHead">
+                            Standard <br>
+                            <span>For Traffic Surveyors, Consultants and Department of Transportation
+
+                            </span> <br><a href="#" class="startBtn">Subscribe Now</a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Membership (Paid Monthly)</td>
+                        <td style="background-color: #bbbbbb;">-</td>
+                        <td>$200.00 / month
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Membership (Paid Annually)
+                        </td>
+                        <td style="background-color: #bbbbbb;">-</td>
+                        <td>$100.00 / month</td>
+                    </tr>
+                    <tr>
+                        <td>Tiered Pricing Model
+                        </td>
+                        <td>Y</td>
+                        <td>Y</td>
+                    </tr>
+                    <tr>
+                        <td>Mileage Rewards Scheme
+                        </td>
+                        <td style="background-color: #bbbbbb;">-</td>
+                        <td>Y</td>
+                    </tr>
+                    <tr>
+                        <td>Cloud Expansion
+                        </td>
+                        <td style="background-color: #bbbbbb;">-</td>
+                        <td>Y</td>
+                    </tr>
+                    <tr>
+                        <td>Project Limit
+                        </td>
+                        <td>1</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Standard Cloud Package
+
+                        </td>
+                        <td>100GB</td>
+                        <td>1TB</td>
+                    </tr>
+                    <tr>
+                        <td>Expedite processing time (within 24hours)
+                        </td>
+                        <td>Standard 72 hours turnaround</td>
+                        <td>Expedite to 24 hours turnaround
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="contact">
+        <div class="box7">
+            <div class="cma">
+                <div class="contacts">
+                    <a class="quote-btn" target="_blank" href="https://forms.gle/QhGTmtipn8yNvdz3A">Get a Quote</a>
+                    <h2>Contact Us</h2>
+                    <div class="article_MediaIcons">
+                        <a href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0TLPMsjA2L4w3YLRSMagwNkxJNEwyMjBLNE5OTTRPsjKoSEszTUqzNLA0MjRLTDE08OKqyEotSlTISUwqBgBQdhLX&q=xjera+labs&rlz=1C1KNTJ_enSG928SG928&oq=xj&aqs=chrome.1.69i60j46i175i199i512j69i57j0i512j69i60l4.4923j0j7&sourceid=chrome&ie=UTF-8"
+                            target="_blank" class="fa fa-google"></a>
+                        <a href="https://www.linkedin.com/in/xjera-labs-connect-823140204" target="_blank"
+                            class="fa fa-linkedin"></a>
+                        <a href="https://www.youtube.com/channel/UCOgNSAubUa_Tofv-gPUgDzg" target="_blank"
+                            class="fa fa-youtube"></a>
+                        <a href="https://www.instagram.com/xjeralabs/" target="_blank" class="fa fa-instagram"></a>
+                        <!-- <a href="https://goo.gl/maps/JwUcZyRasnLrETLE9" target="_blank" class="fa fa-map-marker"></a> -->
+                    </div>
+
+                </div>
+                <div class="mailnaddress">
+                    <a href="mailto: traffic@xjeralabs.com" class="fa fa-fw fa-envelope">
+                        <span>traffic@xjeralabs.com</span>
+                    </a>
+                    <p>The Synergy, 1 International Business Park Rd, #02-17, Singapore 609917</p>
+                </div>
+            </div>
+            <p id="credits">This site is created by Naresh</p>
+        </div>
+
+    </div>
+    <script src="./Script.js"></script>
+</body>
+
+</html>
