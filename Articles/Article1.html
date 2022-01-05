@@ -425,6 +425,21 @@ Navbar
                 margin-right: 0;
             }
 
+            .share_icons {
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .facebook-share-button {
+                margin-bottom: 1rem;
+            }
+
+            .twitter-share-button {
+                margin-top: 1rem;
+            }
+
+
 
         }
 
@@ -731,19 +746,6 @@ Navbar
             opacity: 0.7;
         }
 
-        .share_icons {
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .share_icons iframe {
-            margin-bottom: 1rem;
-        }
-
-        .twitter-share-button {
-            margin-top: 1rem;
-        }
 
 
 
@@ -931,7 +933,7 @@ Navbar
                     justify-content: space-between;
                     width: 30%;
                     height: 100%;">
-                        <iframe
+                        <iframe class="facebook-share-button"
                             src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fxjeralabs.com%2Fstart_page%2FTrafficSight%2F&layout=button&size=small&width=67&height=20&appId"
                             width="67" height="20" style="border:none;overflow:hidden; " scrolling="no" frameborder="0"
                             allowfullscreen="true"
