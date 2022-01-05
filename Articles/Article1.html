@@ -290,6 +290,7 @@ Navbar
         .publisher {
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
             padding: 1rem 0;
@@ -891,17 +892,39 @@ Navbar
 
                 <div class="publisher">
                     <div class="publisherInfo">
-                        <img src="./Images/img_avatar.png" alt="Publisher image" class="publisherImage">
+                        <a href="https://www.linkedin.com/in/henryngyx/" target="_blank"><img
+                                src="./Images/img_avatar.png" alt="Publisher image" class="publisherImage"></a>
                         <p class="publisherName">Published by Henry NG <br><span class="publisherProffesion">Business
                                 Development Manager and Senior Traffic Consultant at Xjera Labs.
                             </span>
                         </p>
                     </div>
-                    <ul>
+                    <!-- <ul>
                         <li> <a href="#"><i class="fab fa-linkedin"></i></a> </i></li>
                         <li> <a href="#"><i class="fab fa-facebook"></i></a> </li>
                         <li> <a href="#"><i class="fab fa-instagram"></i></a> </li>
-                    </ul>
+                    </ul> -->
+                    <div class="share_icons" style="align-items: center;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    width: 30%;">
+                        <iframe
+                            src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fxjeralabs.com%2Fstart_page%2FTrafficSight%2F&layout=button&size=small&width=67&height=20&appId"
+                            width="67" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                        </iframe>
+                        <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+                        <script type="IN/Share" data-url="https://xjeralabs.com/start_page/TrafficSight/
+                        "></script>
+
+                        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+                            data-url="https://xjeralabs.com/start_page/TrafficSight/" data-show-count="false">Tweet</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+
                 </div>
             </div>
             <!-- <div class="articleSuggestion">
