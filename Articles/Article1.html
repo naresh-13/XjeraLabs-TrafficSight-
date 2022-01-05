@@ -377,6 +377,8 @@ Navbar
         }
 
 
+
+
         /* ------------------------------------------------ */
         /* Article media query  */
         @media screen and (max-width: 850px) {
@@ -729,6 +731,24 @@ Navbar
             opacity: 0.7;
         }
 
+        .share_icons {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .share_icons iframe {
+            margin-bottom: 1rem;
+        }
+
+        .twitter-share-button {
+            margin-top: 1rem;
+        }
+
+
+
+
+
         #credits {
             justify-content: center;
             width: 100%;
@@ -909,10 +929,11 @@ Navbar
                     flex-direction: row;
                     flex-wrap: wrap;
                     justify-content: space-between;
-                    width: 30%;">
+                    width: 30%;
+                    height: 100%;">
                         <iframe
                             src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fxjeralabs.com%2Fstart_page%2FTrafficSight%2F&layout=button&size=small&width=67&height=20&appId"
-                            width="67" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            width="67" height="20" style="border:none;overflow:hidden; " scrolling="no" frameborder="0"
                             allowfullscreen="true"
                             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
                         </iframe>
