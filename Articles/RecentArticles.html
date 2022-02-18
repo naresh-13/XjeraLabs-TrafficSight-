@@ -202,7 +202,7 @@ Navbar
             flex-direction: row;
             align-items: top;
             justify-content: space-between;
-            flex-wrap: wrap;
+            /* flex-wrap: wrap; */
             width: 90%;
             height: cover;
             margin-top: 8rem;
@@ -228,18 +228,19 @@ Navbar
             /*-----change---- */
             /* margin-top: 1rem;
             padding: 1rem; */
-            padding: 0.7rem;
+            /* padding: 0.7rem; */
             /*-----change---- */
             height: cover;
-            width: 50%;
+            width: 30%;
         }
 
         .ArticleIMG {
+            margin: auto;
             margin-bottom: 1.5rem;
-            padding-right: 2rem;
-            width: 40vw;
+            padding-right: 1rem;
+            width: 25vw;
             /*-----change---- */
-            height: 55vh;
+            height: 30vh;
             /*-----change---- */
         }
 
@@ -639,9 +640,9 @@ Navbar
         <div class="article_box">
             <div class="article_section">
                 <img src="./Images/Article1_coverpic.png" class="ArticleIMG" alt="" />
-                <p class="Date_Publisher">01 Dec 2021 | 1 Min Read</p>
-                <h2 class="ArticleTitle">
-                    Turning Movement Count and Vehicle Classification
+                <p class="Date_Publisher">10 Jan 2021 | 1 Min Read</p>
+                <h2 class="ArticleTitle"> <a style="text-decoration: none; color: #242c6c;" href="./Article1.html">
+                        Turning Movement Count and Vehicle Classification</a>
                 </h2>
                 <p class="introText">
                     Understanding the existing condition and traffic demand of any study
@@ -655,8 +656,9 @@ Navbar
             <div class="article_section">
                 <img src="./Images/Article2_coverpic.PNG" class="ArticleIMG" alt="" />
                 <p class="Date_Publisher">11 Feb 2021 | 1 Min Read</p>
-                <h2 class="ArticleTitle">
-                    Classified Count Under Wet Weather Condition
+                <h2 class="ArticleTitle"> <a style="text-decoration: none; color: #242c6c;" href="./Article2.html">
+                        Classified Count Under Wet Weather Condition</a>
+
                 </h2>
                 <p class="introText">
                     Wet weather creates blur out, distortion and nois earound the
@@ -668,14 +670,16 @@ Navbar
             </div>
             <div class="article_section">
                 <img src="./Images/Article3_coverpic.png" class="ArticleIMG" width="300rem" height="175rem" alt="" />
-                <p class="Date_Publisher">01 Dec 2021 | 1 Min Read</p>
-                <h2 class="ArticleTitle">
-                    License Plate Recognition Under Various Condition
+                <p class="Date_Publisher">21 Feb 2021 |1 Min Read</p>
+                <h2 class="ArticleTitle"> <a style="text-decoration: none; color: #242c6c;"
+                        href="./Article3.html">License Plate
+                        Recognition Under Various
+                        Condition</a>
                 </h2>
                 <p class="introText">
                     License plate recognition has been commonly used in enforcement and
                     carpark management. It is also a tool to improve the accuracy of
-                    traffic simulations. TrafficSight™ Video Analytic solution allow
+                    traffic simulations. TrafficSightTM Video Analytic solution allow
                     accurate license plate data to be collected.
                 </p>
                 <a href="./Article3.html" class="readMore">Read More</a>
@@ -761,7 +765,7 @@ Navbar
                     aspernatur? Dolore, temporibus exercitationem!</p>
                 <a href="./Article1.html" class="readMore">Read More</a>
             </div> -->
-            <button class="btn">Load more</button>
+            <!-- <button class="btn">Load more</button> -->
         </div>
     </div>
 
@@ -799,9 +803,9 @@ Navbar
     <script src="./Script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
-        $(".article_section").slice(0, 2).show();
+        $(".article_section").slice(0, 3).show();
         $(".btn").on("click", function () {
-            $(".article_section:hidden").slice(0, 2).slideDown();
+            $(".article_section:hidden").slice(0, 3).slideDown();
             if ($(".article_section:hidden").length == 0) {
                 $(".btn").fadeOut("slow");
             }
