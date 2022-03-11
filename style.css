@@ -303,68 +303,26 @@ h2 {
 }
 .traffic-box {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
-  height: 100%;
-  width: 90%;
+  height: cover;
+  width: 100%;
   font-size: 1rem;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 .traffic-box span {
   color: #cfab33;
   font-family: "poppins", sans-serif;
   font-weight: 500;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   visibility: visible;
 }
 .tsp {
   color: #000000;
   font-family: "poppins";
-  font-size: 0.9rem;
-  padding-top: 1rem;
-}
-
-/* -----------benifits------------ */
-.benfit-box {
-  padding: 1rem;
-}
-.benefits {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-}
-.benefits-title h2 {
-  font-size: 1.5rem;
-  font-family: "montserrat", sans-serif;
-  color: #242c6c;
-  width: 90%;
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
-.benefits-title p {
-  color: #000000;
-  font-family: "poppins";
-  font-size: 0.9rem;
-}
-.txtnimg {
-  padding: 0.5rem;
-  padding-top: 3rem;
-  align-items: center;
-  text-align: center;
-}
-.txtnimg img {
-  width: 5rem;
-  height: 4rem;
-}
-.txtnimg p {
-  font-family: "poppins", sans-serif;
-  width: 10rem;
-  color: #cfab33;
-  font-size: 0.7rem;
-}
-
-/* -----------benifits------------ */
 
 #traffic-sight-content {
   padding-right: 2rem;
@@ -372,14 +330,11 @@ h2 {
   color: #000000;
 }
 #traffic-sight-content h2 {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   font-family: "Montserrat", sans-serif;
   color: #242c6c;
 }
-#traffic-sight-content p {
-  margin-bottom: 1rem;
-  font-size: 0.9rem;
-}
+
 /* #traffic-sight-content span {
   color: #cfab33;
   font-family: "poppins", sans-serif;
@@ -391,11 +346,12 @@ h2 {
 .traffic-sight-images {
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   justify-content: flex-end;
   /* margin-top: 50%; */
   align-items: center;
-  width: cover;
+  width: 100%;
+  height: cover;
 }
 
 .traffic-sight-images img {
@@ -403,20 +359,21 @@ h2 {
   width: 16rem;
   height: 10rem;
 }
-/* .traffic-sight-images span {
+.traffic-sight-images span {
   color: #cfab33;
   font-family: "poppins", sans-serif;
   font-weight: 500;
-  font-size: 0.7rem;
-  visibility: visible;
-} */
+  font-size: 0.9rem;
+  /* visibility: hidden; */
+  display: none;
+}
 
-/* -------------------traffic surevey in singapore----------------- */
-
-#div4 {
+/* -----------benifits------------ */
+.benefitsContainer {
   width: 100%;
   height: cover;
   display: flex;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   /* background: url(./Images/Picture1.2.jpg); */
@@ -425,11 +382,11 @@ h2 {
   background-size: cover;
   background-attachment: fixed;
 }
-.box4 {
+.benfit-box {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-between;
   /* flex-wrap: wrap; */
   width: 90%;
   height: cover;
@@ -449,36 +406,132 @@ h2 {
   border-top: 2px solid rgba(255, 255, 255, 0.5);
   border-left: 2px solid rgba(255, 255, 255, 0.5);
 }
-.box4-img img {
+.benefits {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.benefits-title h2 {
+  font-size: 1.5rem;
+  font-family: "montserrat", sans-serif;
+  color: #242c6c;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.benefits-title p {
+  color: #000000;
+  font-family: "poppins";
+  font-size: 1rem;
+}
+
+.txtnimg {
+  padding: 2rem;
+  padding-top: 3rem;
+  align-items: center;
+  text-align: center;
+}
+.txtnimg img {
+  width: 6rem;
+  height: 4rem;
+}
+.txtnimg p {
+  font-family: "poppins", sans-serif;
   width: 12rem;
-  height: 22rem;
-  padding: 1rem;
+  color: #cfab33;
+  font-size: 1rem;
+}
+.txtnimg h4 {
+  font-family: "poppins", sans-serif;
+  width: 12rem;
+  color: #242c6c;
+  font-size: 1rem;
+}
+
+/* -----------benifits------------ */
+
+/* -------------------traffic surevey in singapore----------------- */
+
+#div4 {
+  width: 100%;
+  height: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: url(./Images/Picture1.2.jpg); */
+  background: rgba(0, 0, 0, 0.5) url(./Images/Picture1.2.jpg);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.box4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  align-items: top;
+  /* flex-wrap: wrap; */
+  width: 90%;
+  height: cover;
+  padding: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  /* padding: 5rem; */
+  /* background: rgba(255, 255, 255, 0.7); */
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(255, 255, 255),
+    rgba(255, 255, 255)
+  );
+  backdrop-filter: blur(5px);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.274);
+  border-right: 2px solid rgba(0, 0, 0, 0.274);
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+}
+.box4 img {
+  width: 20rem;
+  height: auto;
+  /* padding: 1rem; */
   visibility: visible;
 }
-.box4-content {
+.box4Content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: top;
+  height: 100%;
+  width: 100%;
+}
+
+.box4ContentRow {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+  align-items: center;
+  /* margin-right: 2rem; */
+  width: 33%;
+  height: 80vh cover;
 }
-.ts_in_sg {
-  padding: 1rem;
-}
-.ts_in_sg img {
-  width: 0rem;
-  height: 0rem;
-  padding: 0rem;
-  visibility: hidden;
-}
-.ts_in_sg h2 {
+
+.box4 h2 {
   padding-bottom: 1rem;
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   color: #242c6c;
 }
-.ts_in_sg p {
+.box4Content h2 {
+  padding-bottom: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #bc9c2c;
+}
+.box4 p {
   font-family: "poppins", sans-serif;
   font-size: 1rem;
+  /* width: 50%; */
 }
 .getaquote1 {
   padding: 1rem;
@@ -488,20 +541,7 @@ h2 {
   color: #cfab33;
   padding-bottom: 1rem;
 }
-.Project-ref {
-  padding: 1rem;
-}
-.Project-ref h2 {
-  font-family: "montserrat", sans-serif;
-  color: #242c6c;
-  font-size: 1.5rem;
-  padding-bottom: 1rem;
-  text-transform: capitalize;
-}
-.Project-ref p {
-  font-family: "poppins", sans-serif;
-  font-size: 1rem;
-}
+
 /* -------------------traffic surevey in singapore----------------- */
 #services {
   width: 100%;
@@ -894,6 +934,25 @@ h2 {
 }
 
 /* ------------------media query------------ */
+@media screen and (max-width: 1250px) {
+  .box4ContentRow {
+    width: 90%;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .box4 {
+    align-items: center;
+  }
+  .getaquote1 {
+    align-items: center;
+    text-align: center;
+  }
+  .box4 img {
+    padding: 1rem 0rem;
+  }
+}
 @media screen and (max-width: 900px) {
   #div1 h2 {
     font-size: 3rem;
@@ -917,11 +976,18 @@ h2 {
   #traffic-sight-content p {
     margin-bottom: 0;
   }
+  #traffic-sight-content {
+    margin-bottom: 2rem;
+    padding-bottom: 0;
+    padding: 0;
+  }
   #traffic-sight-content span {
     visibility: hidden;
+    display: none;
   }
   .traffic-sight-images span {
     visibility: visible;
+    display: inline-block;
   }
   .traffic-sight-images img {
     margin-bottom: 1rem;
@@ -929,14 +995,25 @@ h2 {
   .traffic-sight-images {
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 0;
+    padding-top: 0;
   }
-  /* .box4 {
+  .traffic-box {
+    flex-direction: column;
+  }
+  .box4 {
     align-items: center;
     text-align: center;
-  } */
+  }
+  .box4ContentRow {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
   .benefits {
     justify-content: center;
   }
+
   .txtnimg {
     padding: 2rem;
     padding-top: 3rem;
@@ -950,6 +1027,7 @@ h2 {
     align-items: center;
     justify-content: center;
   }
+
   .box6 {
     padding: 3rem;
   }
@@ -969,18 +1047,6 @@ h2 {
   }
   .mailnaddress p {
     width: 100%;
-  }
-  .ts_in_sg img {
-    width: 12rem;
-    height: 20rem;
-    padding: 1rem;
-    visibility: visible;
-  }
-  .box4-img img {
-    width: 0rem;
-    height: 0rem;
-    padding: 0rem;
-    visibility: hidden;
   }
 }
 
@@ -1018,8 +1084,14 @@ h2 {
   .box4 {
     padding: 0.5rem;
   }
+  .box4 img {
+    width: 15rem;
+  }
   .benefits-title {
     padding-bottom: 1rem;
+  }
+  .benfit-box {
+    padding: 2rem;
   }
   #box5 {
     padding: 2rem;
