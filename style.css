@@ -432,6 +432,7 @@ h2 {
   align-items: center;
   text-align: center;
 }
+
 .txtnimg img {
   width: 6rem;
   height: 4rem;
@@ -493,13 +494,13 @@ h2 {
 .box4 img {
   width: 20rem;
   height: auto;
-  /* padding: 1rem; */
+  padding: 1rem 0;
   visibility: visible;
 }
 .box4Content {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-wrap: wrap;
   align-items: top;
   height: 100%;
@@ -509,8 +510,9 @@ h2 {
 .box4ContentRow {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
+  /* text-align: center; */
   /* margin-right: 2rem; */
   width: 33%;
   height: 80vh cover;
@@ -518,12 +520,13 @@ h2 {
 
 .box4 h2 {
   padding-bottom: 1rem;
+  text-align: center;
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   color: #242c6c;
 }
 .box4Content h2 {
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   color: #bc9c2c;
