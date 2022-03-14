@@ -537,10 +537,10 @@ h2 {
   /* width: 50%; */
 }
 .box4ContentRowP {
-    margin: 5rem, 2rem;
+    margin: 5rem 2rem;
   }
 .box4ContentRowP2 {
-    margin: 4.5rem, 0.1rem;
+    margin: 4.5rem 0.1rem;
   }
 
 .getaquote1 {
@@ -1042,6 +1042,12 @@ h2 {
     padding: 3rem;
   }
   
+  .box4ContentRowP {
+    margin: 0;
+  }
+  .box4ContentRowP2 {
+    margin: 0;
+  }
   
 }
 
