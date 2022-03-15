@@ -546,12 +546,12 @@ h2 {
 }
 
 .box4ContentRowP {
-  margin: 5rem 2rem;
+  margin: 3.5rem 2rem;
   margin-bottom: 2rem;
 }
 
 .box4ContentRowP2 {
-  margin: 4.5rem 2rem;
+  margin: 4rem 2rem;
   margin-bottom: 2rem;
 }
 
@@ -951,11 +951,22 @@ h2 {
   .box4 img {
     width: 22.5rem;
   }
+  .box4ContentRowP {
+    margin: 4.5rem 2rem;
+  }
 }
 
 @media screen and (max-width: 1300px) {
   .box4 img {
     width: 20rem;
+  }
+
+  .box4ContentRowP {
+    margin: 6rem 2rem;
+  }
+
+  .box4ContentRowP2 {
+    margin: 5rem 2rem;
   }
 }
 
